@@ -1,5 +1,11 @@
-<h1>Hello Angular</h1>
+<div class="flex flex-wrap justify-content-center"  *ngIf="exibindoBotoes()">
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-button label="CEP" routerLink="/cep"></p-button>
+    </div>
 
-<div class="card flex justify-content-center">
-  <p-button label="Submit"></p-button>
+    <div class="col-12 md:col-6 lg:col-3">
+        <p-button label="CNPJ" routerLink="/cnpj"></p-button>
+    </div>
 </div>
+
+<router-outlet></router-outlet>
